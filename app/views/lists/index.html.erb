@@ -3,11 +3,7 @@
 <% @lists.each do | list | %>
   <%= list.name %>
   <% list.photos.each do |photo| %>
-    <% if list.photo.attached? %>
     <%= cl_image_tag photo.key, width: 400, height: 300, crop: :fill %>
-    <% else  %>
-    <p>pas de photo</p>
-    <% end %>
   <% end %>
   <br>
   <%= link_to "Have a look a this list", list_path(list) %>
