@@ -2,11 +2,12 @@
 
 <% @lists.each do | list | %>
   <%= list.name %>
+    <%= cl_image_tag("TvmnitaxpnluuonnhwatzY",
+      width: 400, height: 300, crop: :fill) %>
 <br>
   <%= link_to "Have a look a this list", list_path(list) %>
   <br>
-  <%= cl_image_tag(TvmnitaxpnluuonnhwatzY,
-      width: 400, height: 300, crop: :fill) %>
+
 <br>
 <br>
 <% end %>
