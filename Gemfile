@@ -8,6 +8,9 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 gem "sassc-rails"
 
+# Cloudinary add
+gem "cloudinary"
+
 # Dot Env
 gem "dotenv-rails"
 
